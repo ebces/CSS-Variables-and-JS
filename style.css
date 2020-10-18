@@ -1,0 +1,32 @@
+.photo-editor {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parameters {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parameters__title {
+    font-size: 2.5vw;
+}
+
+.parameters__parameter {
+    margin: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+
+.photo {
+    width: 60vw;
+}
+
+.parameters__input {
+    width: 8vw;
+}
