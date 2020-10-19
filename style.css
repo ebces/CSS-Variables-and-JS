@@ -1,0 +1,53 @@
+:root {
+    --bg-color: #ffffff;
+    --width: 20vw;
+    --blur: 0px;
+    --inversion: 0%;
+    --sepia: 0%;
+    --saturation: 0%;
+    --shade: 0deg;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.photo-editor {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.parameters {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parameters__title {
+    font-size: 2.5vw;
+    color: var(--bg-color);
+    filter: invert(100%);
+}
+
+.parameters__parameter {
+    margin: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+
+.photo {
+    width: var(--width);
+    margin: 0 auto;
+    filter: blur(var(--blur))
+            invert(var(--inversion))
+            sepia(var(--sepia))
+            saturate(var(--saturation))
+            hue-rotate(var(--shade));
+}
+
+.parameters__input {
+    width: 8vw;
+}

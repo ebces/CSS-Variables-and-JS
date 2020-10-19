@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="photo-editor">
+        <div class="parameters">
+            <h2 class="parameters__title">Фотофильтры</h2>
+            <div class="parameters__parameter">
+                <label for="background-color">Цвет фона:</label>
+                <input type="color" id="background-color" class="parameters__input" value="#ffffff">
+            </div>
+            <div class="parameters__parameter">
+                <label for="photo-size">Размер фото:</label>
+                <input type="range" id="photo-size" class="parameters__input" min="20" max="60" value="20" data-property="width" data-sizing="vw">
+            </div>
+            <div class="parameters__parameter">
+                <label for="blur">Размытие:</label>
+                <input type="range" id="blur" class="parameters__input" min="0" max="4" value="0"data-property="blur" data-sizing="px">
+            </div>
+            <div class="parameters__parameter">
+                <label for="inversion">Инверсия:</label>
+                <input type="range" id="inversion" class="parameters__input" value="0" data-property="inversion" data-sizing="%">
+            </div>
+            <div class="parameters__parameter">
+                <label for="sepia">Сепия:</label>
+                <input type="range" id="sepia" class="parameters__input" value="0" data-property="sepia" data-sizing="%">
+            </div>
+            <div class="parameters__parameter">
+                <label for="saturation">Насыщенность:</label>
+                <input type="range" id="saturation" class="parameters__input" value="0" data-property="saturation" data-sizing="%">
+            </div>
+            <div class="parameters__parameter">
+                <label for="shade">Оттенок:</label>
+                <input type="range" id="shade" class="parameters__input" value="0" data-property="shade" data-sizing="deg">
+            </div>
+        </div>
+        <img src="assets/images/photo-1465188162913-8fb5709d6d57.jpg" alt="mountains" class="photo">
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
