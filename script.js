@@ -7,7 +7,7 @@ const addPhotoProperty = (property, element, sizing) => {
   photo.style.setProperty(property, `${element.value}${sizing}`);
 };
 
-color.addEventListener('change', () => {
+color.addEventListener('input', () => {
   main.style.setProperty('--bg-color', color.value);
 });
 
